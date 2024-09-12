@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New User</title>
+  </head>
+  <body>
+    <h1>Add New User</h1>
+    <form action="/users/addnew" method="post">
+      <input type="text" placeholder="Enter User Name" name="username" />
+      <br />
+      <br />
+      <input type="email" placeholder="Enter User email" name="email" />
+      <br />
+      <br />
+      <input
+        type="password"
+        placeholder="Enter User password"
+        name="password"
+      />
+      <br />
+      <br />
+      <button>Save</button>
+    </form>
+  </body>
+</html>

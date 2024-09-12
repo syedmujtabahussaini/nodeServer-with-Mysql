@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Edit</title>
+  </head>
+  <body>
+    <h1>This is User Edit Page</h1>
+    <h4>Id:<%=result.id%></h4>
+
+    <form
+      action="http://localhost:8080/users/edit/<%=result.id%>?_method=PATCH"
+      method="post"
+    >
+      <input type="text" value=<%=result.username%> name="username"/>
+      <br />
+      <br />
+      <input type="text" value=<%=result.email%> name="email" />
+      <button>Save</button>
+    </form>
+  </body>
+</html>
